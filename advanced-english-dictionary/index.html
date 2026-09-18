@@ -147,51 +147,55 @@
         <h1>Privacy Policy</h1>
         <div class="meta-info">
             <strong>App Name:</strong> Advanced English Dictionary<br>
-            <strong>Effective Date:</strong> September 14, 2026<br>
-            <strong>Last Updated:</strong> September 14, 2026
+            <strong>Package Name:</strong> com.saudapps.advancedenglishdictionary<br>
+            <strong>Effective Date:</strong> September 18, 2026<br>
+            <strong>Last Updated:</strong> September 18, 2026
         </div>
     </header>
 
     <div class="highlight-box">
-        <p>This Privacy Policy applies to the <strong>Advanced English Dictionary</strong> mobile application (hereinafter referred to as "the App", "we", "us", or "our"). We respect your privacy and are committed to protecting the personal data of our users ("user" or "you").</p>
+        <p>This Privacy Policy applies to the <strong>Advanced English Dictionary</strong> mobile application (hereinafter referred to as "the App", "we", "us", or "our"). We respect your privacy and are strictly committed to protecting the personal data of our users ("user" or "you").</p>
     </div>
 
-    <h2>1. Overview & Commitment</h2>
-    <p>We designed <strong>Advanced English Dictionary</strong> to provide dictionary lookup, voice translation, vocabulary learning, and text recognition services. We comply strictly with Google Play Developer Policies, including the Google Play Data Safety requirements, General Data Protection Regulation (GDPR), and Children's Online Privacy Protection Act (COPPA).</p>
+    <h2>1. Overview & Data Safety Commitment</h2>
+    <p>We designed <strong>Advanced English Dictionary</strong> to serve as a comprehensive offline and online vocabulary tool, translation suite, voice speech assistant, and learning companion. We strictly comply with Google Play Developer Policies, Google Play Data Safety declarations, General Data Protection Regulation (GDPR), and Children's Online Privacy Protection Act (COPPA).</p>
 
-    <h2>2. Information We Collect</h2>
+    <h2>2. Information We Collect & Data Storage</h2>
 
-    <h3>A. Information You Provide Directly</h3>
+    <h3>A. Information Stored Locally on Your Device</h3>
+    <p>To provide fast offline functionality and respect user privacy, the following features store data <strong>100% locally on your device</strong> using Android Room Database and DataStore/Preferences. This data is never transmitted, collected, or uploaded to our servers:</p>
     <ul>
-        <li><strong>Search Queries & Favorites:</strong> Words, idioms, and phrases you search for or save as bookmarks are stored locally on your device for your convenience and offline functionality.</li>
-        <li><strong>User Feedback / Support Requests:</strong> If you contact us via email, we collect your email address and any information provided in your correspondence to assist you.</li>
+        <li><strong>Search History & Recent Lookups:</strong> Local records of searched words, phrases, idioms, and translations.</li>
+        <li><strong>Favorites & Saved Bookmarks:</strong> Custom saved lists, bookmarked vocabulary, expressions, grammar rules, conversations, collocations, proverbs, and phrasal verbs.</li>
+        <li><strong>App Preferences:</strong> Display themes (Light/Dark), font scale, Text-To-Speech pitch/rate, and notification preferences.</li>
     </ul>
 
-    <h3>B. Device & Technical Information Collected Automatically</h3>
-    <p>When you access and use the App, certain information is collected automatically by integrated third-party SDKs for performance, analytics, and advertising purposes:</p>
+    <h3>B. Android System Permissions & Hardware Access</h3>
+    <p>To deliver advanced learning features, the App requests specific hardware and system permissions. These are strictly used for their intended functional purposes:</p>
     <ul>
-        <li><strong>Device Identifiers:</strong> Android Advertising ID (AAID), Device Model, Operating System Version, Hardware Specs.</li>
-        <li><strong>Network & Usage Data:</strong> IP Address, Mobile Network Information, App Launch Times, Screen Views, Feature Usage, and Crash Logs.</li>
-        <li><strong>Cookies & Web Beacons:</strong> Identifiers used by advertising partners to deliver tailored advertisements.</li>
+        <li><strong>Microphone / Audio (RECORD_AUDIO):</strong> Used for Voice Search and Voice Translation (Speech-to-Text). Speech input is processed in real-time to convert spoken audio into text. <em>We do not record, save, store, or transmit your audio recordings to our servers.</em></li>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used on Android 13+ to deliver optional learning notifications such as "Word of the Day", study reminders, and app feature announcements.</li>
+        <li><strong>Foreground Service & Data Sync (FOREGROUND_SERVICE_DATA_SYNC):</strong> Enables WorkManager to securely download Google ML Kit translation language models in the background with persistent foreground notifications.</li>
+        <li><strong>Internet & Network State (INTERNET, ACCESS_NETWORK_STATE):</strong> Required to download ML Kit translation models, fetch remote dictionary updates, deliver push notifications, log stability crash reports, and display ads.</li>
     </ul>
 
-    <h3>C. App Permissions & Data Usage</h3>
-    <p>To deliver advanced dictionary and translation features, the App may request access to specific hardware features. These permissions are used exclusively for their stated purposes:</p>
+    <h3>C. Technical & Diagnostic Information Collected Automatically</h3>
+    <p>When using the App, certain non-personally identifiable technical information is collected automatically by integrated third-party SDKs to maintain performance, stability, and app features:</p>
     <ul>
-        <li><strong>Microphone / Audio (Voice Search & Translation):</strong> Allows you to speak words or sentences for translation and pronunciation. Audio input is processed locally or transmitted via encrypted channels to speech recognition engines. We do <em>not</em> record, store, or sell audio files.</li>
-        <li><strong>Camera (Camera Search / Text Recognition / OCR):</strong> Allows you to scan printed text for dictionary lookups or translation. Images are processed in real-time on your device to extract text. We do <em>not</em> store, capture, or transmit your camera photos to external servers.</li>
-        <li><strong>Internet & Network State:</strong> Required to fetch online definitions, translation results, dictionary updates, and load advertisements.</li>
+        <li><strong>Device Metadata:</strong> Device model, manufacturer, Android OS version, system language, and hardware specifications.</li>
+        <li><strong>Crash & Performance Analytics:</strong> Anonymous stack traces, memory statistics, crash logs, and app state at the time of an error via Firebase Crashlytics.</li>
+        <li><strong>Notification Messaging Data:</strong> Anonymous Firebase Cloud Messaging (FCM) installation tokens and Firebase In-App Messaging (FIAM) event triggers.</li>
     </ul>
 
     <h2>3. Advertising Policy (Google AdMob)</h2>
-    <p>To support the development and maintenance of this App as a free service, we integrate third-party advertising services, primarily <strong>Google AdMob</strong>.</p>
+    <p>To support the ongoing development of this App as a free tool, we integrate third-party advertising via <strong>Google AdMob</strong>.</p>
     <ul>
-        <li><strong>Personalized & Non-Personalized Ads:</strong> AdMob may collect and use your Android Advertising ID, IP address, and device metadata to display relevant advertisements.</li>
-        <li><strong>Opting Out of Personalized Ads:</strong> You can opt out of interest-based advertising on your Android device by navigating to: <br><code>Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization</code> (or <code>Reset Advertising ID</code>).</li>
+        <li><strong>Ad Delivery & Device Identifiers:</strong> AdMob may collect Android Advertising ID (AAID), IP address, and device metadata to serve relevant advertisements.</li>
+        <li><strong>Opting Out of Personalized Ads:</strong> You can reset your Advertising ID or opt out of personalized interest-based ads on Android via <code>Settings &gt; Google &gt; Ads &gt; Reset Advertising ID / Opt out of Ads Personalization</code>.</li>
     </ul>
 
     <h2>4. Third-Party SDKs & Service Providers</h2>
-    <p>We use trusted third-party services that may collect information used to identify you. Below are the privacy policies of the third-party service providers utilized in the App:</p>
+    <p>We utilize trusted third-party service providers that may collect non-personal diagnostic data. Below are their respective privacy policy references:</p>
 
     <table class="sdk-table">
         <thead>
@@ -204,53 +208,58 @@
         <tbody>
             <tr>
                 <td><strong>Google Play Services</strong></td>
-                <td>Core Android framework infrastructure</td>
+                <td>Core Android platform infrastructure</td>
                 <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
             </tr>
             <tr>
-                <td><strong>Google AdMob</strong></td>
-                <td>In-app Monetization & Advertisement delivery</td>
-                <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a></td>
+                <td><strong>Google ML Kit (Translate & Language ID)</strong></td>
+                <td>On-device machine translation & language detection</td>
+                <td><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit Privacy Terms</a></td>
             </tr>
             <tr>
-                <td><strong>Google Analytics for Firebase</strong></td>
-                <td>App performance & usage analytics</td>
-                <td><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Firebase Analytics Terms</a></td>
+                <td><strong>Google Firebase Cloud Messaging (FCM)</strong></td>
+                <td>Push notification delivery</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google Firebase In-App Messaging (FIAM)</strong></td>
+                <td>In-app educational alerts & feature updates</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
             </tr>
             <tr>
                 <td><strong>Firebase Crashlytics</strong></td>
-                <td>Crash reporting & stability monitoring</td>
-                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+                <td>Anonymous crash logging & app stability analysis</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Crashlytics Data Terms</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google AdMob</strong></td>
+                <td>In-app Monetization & Ad delivery</td>
+                <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a></td>
             </tr>
         </tbody>
     </table>
 
-    <h2>5. Data Retention & Security</h2>
-    <p>We implement appropriate technical, administrative, and physical security measures to safeguard your information against unauthorized access, loss, alteration, or disclosure. Locally stored data (such as bookmarks and history) remains on your device until you clear app data or uninstall the App.</p>
-
-    <h2>6. Children's Privacy (COPPA Compliance)</h2>
-    <p>Our Services are not intended for children under 13 years of age (or under 16 in the European Union). We do not knowingly collect or solicit personal identifiable information from children. If we discover that a child under 13 has provided us with personal information, we will delete it immediately from our servers. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
-
-    <h2>7. User Data Rights & Data Deletion</h2>
-    <p>Depending on your jurisdiction (such as GDPR in the EU or CCPA in California), you have rights regarding your personal information:</p>
+    <h2>5. Data Retention & User Erasure Rights</h2>
+    <p>Since we do not create or manage online user accounts, all your saved data (history, bookmarks, notes, favorites) remains stored locally on your physical device. You can immediately delete 100% of your stored data at any time by:</p>
     <ul>
-        <li><strong>Access & Portability:</strong> You have the right to request information about the data collected about you.</li>
-        <li><strong>Data Deletion Request:</strong> Since we do not maintain user accounts on an external server, most data is stored locally on your device. You can erase all app data instantly by going to <code>Android Settings &gt; Apps &gt; Advanced English Dictionary &gt; Storage &gt; Clear Data</code> or by uninstalling the App.</li>
-        <li><strong>Contact for Data Requests:</strong> If you wish to submit a data inquiry or deletion request regarding third-party services, please contact us at <a href="mailto:saud.appstudio@gmail.com">saud.appstudio@gmail.com</a>.</li>
+        <li>Navigating to <code>Android Settings &gt; Apps &gt; Advanced English Dictionary &gt; Storage &gt; Clear Data</code>.</li>
+        <li>Uninstalling the App from your device.</li>
     </ul>
 
-    <h2>8. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time to reflect changes in legal, technical, or business developments. We advise you to review this page periodically for any updates. Changes are effective immediately after they are posted on this page.</p>
+    <h2>6. Children's Privacy (COPPA Compliance)</h2>
+    <p>Our App is designed for general audiences and language learners. We do not knowingly collect or solicit personal identifiable information from children under 13 (or under 16 in the EU). If we become aware that a child under 13 has provided personal data, we will take immediate steps to delete such information.</p>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have any questions, concerns, or suggestions regarding this Privacy Policy, please contact us at:</p>
+    <h2>7. Policy Updates & Contact Us</h2>
+    <p>We may update this Privacy Policy periodically to reflect app features, legal, or technical changes. Any updates become effective immediately upon posting to this page.</p>
+
     <div class="highlight-box">
-        <p><strong>Developer Support:</strong> Saud App Studio / Developer Support Team</p>
+        <p><strong>Developer Support:</strong> Saud App Studio</p>
         <p><strong>Email:</strong> <a href="mailto:saud.appstudio@gmail.com">saud.appstudio@gmail.com</a></p>
+        <p><strong>Privacy Policy URL:</strong> <a href="https://saudappstudio.github.io/privacy-policy/advanced-english-dictionary/" target="_blank">https://saudappstudio.github.io/privacy-policy/advanced-english-dictionary/</a></p>
     </div>
 
     <footer>
-        &copy; 2026 Advanced English Dictionary. All rights reserved.
+        &copy; 2026 Advanced English Dictionary by Saud App Studio. All rights reserved.
     </footer>
 </div>
 
