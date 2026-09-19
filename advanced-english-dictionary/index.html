@@ -147,9 +147,9 @@
         <h1>Privacy Policy</h1>
         <div class="meta-info">
             <strong>App Name:</strong> Advanced English Dictionary<br>
-            <strong>Package Name:</strong> com.saudapps.advancedenglishdictionary<br>
+            <strong>Package Name:</strong> com.saudappstudio.advancedenglishdictionary<br>
             <strong>Effective Date:</strong> September 18, 2026<br>
-            <strong>Last Updated:</strong> September 18, 2026
+            <strong>Last Updated:</strong> September 20, 2026
         </div>
     </header>
 
@@ -176,21 +176,23 @@
         <li><strong>Microphone / Audio (RECORD_AUDIO):</strong> Used for Voice Search and Voice Translation (Speech-to-Text). Speech input is processed in real-time to convert spoken audio into text. <em>We do not record, save, store, or transmit your audio recordings to our servers.</em></li>
         <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used on Android 13+ to deliver optional learning notifications such as "Word of the Day", study reminders, and app feature announcements.</li>
         <li><strong>Foreground Service & Data Sync (FOREGROUND_SERVICE_DATA_SYNC):</strong> Enables WorkManager to securely download Google ML Kit translation language models in the background with persistent foreground notifications.</li>
-        <li><strong>Internet & Network State (INTERNET, ACCESS_NETWORK_STATE):</strong> Required to download ML Kit translation models, fetch remote dictionary updates, deliver push notifications, log stability crash reports, and display ads.</li>
+        <li><strong>Internet & Network State (INTERNET, ACCESS_NETWORK_STATE):</strong> Required to download ML Kit translation models, perform online dictionary/translation lookups, deliver push notifications, log stability crash reports, and display ads.</li>
     </ul>
 
     <h3>C. Technical & Diagnostic Information Collected Automatically</h3>
     <p>When using the App, certain non-personally identifiable technical information is collected automatically by integrated third-party SDKs to maintain performance, stability, and app features:</p>
     <ul>
         <li><strong>Device Metadata:</strong> Device model, manufacturer, Android OS version, system language, and hardware specifications.</li>
-        <li><strong>Crash & Performance Analytics:</strong> Anonymous stack traces, memory statistics, crash logs, and app state at the time of an error via Firebase Crashlytics.</li>
+        <li><strong>Usage & Crash Analytics:</strong> Anonymous app session events via Firebase Analytics, as well as anonymous stack traces, memory statistics, crash logs, and app state at the time of an error via Firebase Crashlytics.</li>
         <li><strong>Notification Messaging Data:</strong> Anonymous Firebase Cloud Messaging (FCM) installation tokens and Firebase In-App Messaging (FIAM) event triggers.</li>
+        <li><strong>Online Query Processing:</strong> When performing online word definitions, synonym lookups, or web translations, non-personal search query strings are transmitted securely over HTTPS to public APIs (Free Dictionary API, Datamuse API, and Google Translate API). No personal identifiers are attached to these requests.</li>
     </ul>
 
-    <h2>3. Advertising Policy (Google AdMob)</h2>
-    <p>To support the ongoing development of this App as a free tool, we integrate third-party advertising via <strong>Google AdMob</strong>.</p>
+    <h2>3. Advertising Policy & GDPR Consent (Google AdMob)</h2>
+    <p>To support the ongoing development of this App as a free tool, we integrate third-party advertising via <strong>Google AdMob</strong> and manage privacy choices using <strong>Google User Messaging Platform (UMP)</strong>.</p>
     <ul>
         <li><strong>Ad Delivery & Device Identifiers:</strong> AdMob may collect Android Advertising ID (AAID), IP address, and device metadata to serve relevant advertisements.</li>
+        <li><strong>GDPR & User Consent Choices:</strong> For users in the European Economic Area (EEA) and the UK, consent choices regarding personalized vs non-personalized ads are gathered at app launch via Google UMP consent forms.</li>
         <li><strong>Opting Out of Personalized Ads:</strong> You can reset your Advertising ID or opt out of personalized interest-based ads on Android via <code>Settings &gt; Google &gt; Ads &gt; Reset Advertising ID / Opt out of Ads Personalization</code>.</li>
     </ul>
 
@@ -217,6 +219,11 @@
                 <td><a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener">ML Kit Privacy Terms</a></td>
             </tr>
             <tr>
+                <td><strong>Google Firebase Analytics</strong></td>
+                <td>Anonymous feature usage telemetry & app analytics</td>
+                <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Analytics Terms</a></td>
+            </tr>
+            <tr>
                 <td><strong>Google Firebase Cloud Messaging (FCM)</strong></td>
                 <td>Push notification delivery</td>
                 <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
@@ -232,9 +239,19 @@
                 <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Crashlytics Data Terms</a></td>
             </tr>
             <tr>
-                <td><strong>Google AdMob</strong></td>
-                <td>In-app Monetization & Ad delivery</td>
+                <td><strong>Google AdMob & UMP</strong></td>
+                <td>In-app monetization, ad delivery & GDPR consent management</td>
                 <td><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob Policies</a></td>
+            </tr>
+            <tr>
+                <td><strong>Free Dictionary API & Datamuse API</strong></td>
+                <td>Online word definitions, phonetics, and synonym search</td>
+                <td><a href="https://dictionaryapi.dev/" target="_blank" rel="noopener">Free Dictionary API Terms</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google Translate API</strong></td>
+                <td>Online cloud text translation fallback</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
             </tr>
         </tbody>
     </table>
